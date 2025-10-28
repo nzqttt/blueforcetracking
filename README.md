@@ -1,7 +1,3 @@
-Here’s your updated **README.md** with the new “Start dummyServer” section added before the backend startup instructions 👇
-
----
-
 # BlueForceTracking Project
 
 ## Overview
