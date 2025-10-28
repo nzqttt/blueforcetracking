@@ -1,0 +1,69 @@
+.sidebarWrapper {
+  display: flex;
+  height: 100vh;
+  background: #1072B2;
+}
+
+.sidebar {
+  width: 50px;
+  background: #1072B2;
+  color: white;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuItem {
+  position: relative;
+  cursor: pointer;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background-color: #0c4972ff;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 9999;
+  border: white solid 1px;
+}
+.menuItem:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+.active .button {
+  background-color: #0c4972ff;
+}

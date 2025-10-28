@@ -1,0 +1,116 @@
+.panel {
+  background: rgba(255, 255, 255, 0.1); /* light grey transparent */
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  color: black; /* all text black */
+}
+
+.searchHeader {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background: #0c5686;
+}
+
+.searchHeader h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #393939;
+  background-color: white;
+}
+
+.deviceList {
+  padding: 0.5rem;
+}
+
+.deviceItem {
+  background: #474747; /* solid black */
+  color: #ffffff; /* white font */
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.deviceItem:hover {
+  background: #222222; /* slightly lighter black */
+  transform: translateY(-2px); /* small lift effect */
+}
+
+
+.status {
+  font-size: 12px;
+  color: white;}
+
+.meta {
+  font-size: 12px;
+  color: white;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: black;
+}
+
+.detailsHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background: rgba(200, 200, 200, 0.25);
+}
+
+.backButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.deviceTag {
+  background: rgba(200, 200, 200, 0.4); /* grey tag */
+  color: black;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.battery {
+  margin-left: auto;
+  font-weight: bold;
+  color: black;
+}
+
+.imageSection {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(200, 200, 200, 0.1);
+}
+
+.deviceImage {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.infoSection {
+  padding: 1rem;
+  background: rgba(200, 200, 200, 0.15);
+  flex-grow: 1;
+  color: black;
+}

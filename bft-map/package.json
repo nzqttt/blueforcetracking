@@ -1,0 +1,31 @@
+{
+  "name": "bft-map-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "dev": "concurrently \"next dev -p 3001\" \"wait-on http://localhost:3001 && electron .\"",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "electron": "electron ."
+  },
+  "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "maplibre-gl": "^5.10.0",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "concurrently": "^9.2.1",
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "wait-on": "^9.0.0"
+  }
+}
